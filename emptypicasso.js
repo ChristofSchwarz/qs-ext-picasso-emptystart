@@ -91,7 +91,57 @@ define([
 // High --> qMeasureInfo/1
 
 // ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ 
-
+    scales: {
+      y: {
+        data: { fields: ['qMeasureInfo/0', 'qMeasureInfo/1'] },
+        invert: true,
+        expand: 0.4
+      },
+      t: { data: { extract: { field: 'qDimensionInfo/0' } } }
+    },
+    components: [{
+      type: 'grid-line',
+      x: 't'
+    },{
+      type: 'axis',
+      dock: 'left',
+      scale: 'y'
+    },{
+      type: 'axis',
+      dock: 'bottom',
+      scale: 't',
+      formatter: {
+        type: 'd3-time',
+        format: '%Y-%m'
+      }
+    }, {
+      key: 'lines',
+      type: 'line',
+      data: {
+        extract: {
+          field: 'qDimensionInfo/0',
+          props: {
+            low: { field: 'qMeasureInfo/0' },
+            high: { field: 'qMeasureInfo/1' }
+          }
+        }
+      },
+      settings: {
+        coordinates: {
+          major: { scale: 't' },
+          minor0: { scale: 'y', ref: 'low' },
+          minor: { scale: 'y', ref: 'high' }
+        },
+        layers: {
+          curve: 'monotone',
+          line: {
+            show: false
+          },
+          area: {}
+        }
+      }
+    }]
+					
 // ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ 
 
 				}
