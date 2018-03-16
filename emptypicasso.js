@@ -1,9 +1,15 @@
 define([
-// Picasso and Picasso Q plugin which is preinstalled with Qlik Sense (no download needed)
+// Picasso and Picasso Q plugin from the preinstalled Qlik Sense location (usually way older 
+// than the current picassojs.com (however: no NPM download needed)
+// No guarantee that below asset locations will remain with newer Sense versions. Use this 
+// only as a first quick try or if you cannot use NPM INSTALL as instructed next ...
+	
 	'/resources/assets/external/picasso/dist/picasso.min.js', 
 	'/resources/assets/external/picasso/plugins/q/dist/picasso-q.min.js' 
 	
-//	Picasso and Picasso Q plugin when you used NPM package manager from your extension root folder
+// Picasso and Picasso Q plugin after you used NPM package manager from your extension root folder
+// then the below relative subfolders with *.min.js files should have been created.
+	
 //	'./node_modules/picasso.js/dist/picasso.min', // to get this run "npm install picasso.js"
 //	'./node_modules/picasso-plugin-q/dist/picasso-q.min' // to get this run "npm install picasso-plugin-q"
 ]
@@ -11,6 +17,16 @@ define([
 {
   picasso.use(picassoQ); // register q plugin
  
+// Use room between the comment rows ▼ ▼ ▼ and ▲ ▲ ▲ to copy/paste 
+// possible custom functions (e.g. "box" or "label" or similar).
+// While they were defined like 'box = function({ .... })' on 
+// observablehq.com, you need to put a "var" in front after pasting 
+// them in here such as 'var box = function ({ ... })'
+
+// ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ 
+
+// ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ 
+
 	return {
 		definition: { // property panel definition
 		  type: 'items',
@@ -18,12 +34,12 @@ define([
 		  items: {
 			dimensions: {
 				uses: "dimensions",
-				min: 1,
+				min: 1,  // adjust this as needed
 				max: 2
 			},
 			measures: {
 				uses: "measures",
-				min: 2,
+				min: 2,  // adjust this as needed
 				max: 2
 			},
 			sorting: {
@@ -42,7 +58,7 @@ define([
 			qDimensions: [],
 			qMeasures: [],
 			qInitialDataFetch: [
-			  { qWidth: 3, qHeight: 1000 },
+			  { qWidth: 3, qHeight: 1000 },  // adjust as needed
 			],
 			qSuppressZero: false,
 			qSuppressMissing: true,
@@ -63,11 +79,20 @@ define([
 				  data: layout.qHyperCube
 				}],
 				settings: {
-/////////////////////////////////////////////////////////////////////
+				
+// Use room between the comment rows ▼ ▼ ▼ and ▲ ▲ ▲ to copy/paste 
+// your Picasso settings. Make sure you copy only the settings part
+// without the opening and closing {} curly brackets.
+// Then search for the labels of the Test Data array used on
+// observablehq.com and replace it with the qHypercube syntax e.g.
+// Date --> qDimensionInfo/0
+// Low --> qMeasureInfo/0
+// High --> qMeasureInfo/1
 
-// copy-paste the settings from your picassojs.com experiment
+// ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ 
 
-/////////////////////////////////////////////////////////////////////
+// ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ 
+
 				}
 		    })
 		}
