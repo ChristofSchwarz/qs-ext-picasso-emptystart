@@ -1,10 +1,9 @@
 # qs-ext-picasso-emptystart
-Here you can find JS code to be used as a starting point for a Qlik Sense *Picasso extension* which makes use of the open-sourced picassojs.com. 
+Here you can find JS code to be used as a starting point for a Qlik Sense *Picasso extension* which makes use of the open-sourced picassojs.com
 
-This is an empty wrap only, but made ready to more or less copy/paste Json code from https://beta.observablehq.com in here.
+Although this already contains a specific picasso chart (the Range-Area chart from here  https://beta.observablehq.com/@miralemd/picasso-js-range-area-chart ) this can easily be used as starting point for another Picasso chart. Try it out (what you see it what you get) on https://picassojs.com and copy/paste the Json code from https://beta.observablehq.com (which is the playground page behind) into the newpicasso.js file from here. 
 
-For example I did below extension based on that chart https://beta.observablehq.com/@miralemd/picasso-js-range-area-chart ...
-You can see the result in subfolder "finishedexamples" in here, in case you get off track ;-)
+To "reset" this chart and get a new one, just remove or comment out everything between the rows with down triangles ▼▼▼ and up triangles ▲▲▲ ...
 
 ![alt text](https://raw.githubusercontent.com/ChristofSchwarz/qs-ext-picasso-emptystart/master/Screenshot%202018-03-16%2019.10.14.png "text")
 
