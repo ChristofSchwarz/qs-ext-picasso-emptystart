@@ -8,15 +8,20 @@ When you install this example and use it, it will show "Hello PicassoJS" as a st
 * Note that there are also some examples copied and opened in the Extenions editor, like 'sample-stack-area.js' and 'sample-range-area.js' which you can copy/place over your "mypicasso1.js" file to get a working chart instantly.
 3) To start your own chart, just remove the "Hello PicassoJS" line between the down triangles ▼▼▼ and up triangles ▲▲▲ where it reads "components: [...]
 4) Best place to try out the settings in a what you see it what you get manner is the "Examples" section on https://picassojs.com This will take you to  https://beta.observablehq.com (the playground page behind) 
-5) When done, copy/paste your Json definitions into the newpicasso.js file from this package
-6) Watch for the inline-comments which tell you where to paste what.
+5) When done, copy/paste your Json definitions (the settings-object and possible custom functions) into your mypicasso1.js file from this package where the inline-comments tell you. Adjust the hypercube size, number of measures and dimensions accordingly.
 
-This is contained in the sample:
-
+Screenshots:
 ![alt text](https://raw.githubusercontent.com/ChristofSchwarz/qs-ext-picasso-emptystart/master/Screenshot.png "Screenshot")
+
+### Note on NPM INSTALL
+This code will run out of the box and doesn't force you to install the latest picassojs javascript packages. This is because it reuses the preinstalled picasso.min.js and picasso-q.min.js which ships with the Sense installtion (both Server and Desktop). However it is *strongly recommended* to download Picasso.js and Picasso-Q-Plugin using NPM INSTALL (part of NodeJS installation). This is because the internally shipped picasso files may relocate with newer versions and they are typically months older than the current available one.
+
+* Go to the relative root folder on Qlik Sense Desktop in a Command Prompt. In the above example the extension is here: "C:\Users\<yourid>\Documents\Qlik\Sense\Extensions\mypicasso1"
+* type "npm install picassojs.com"
+* type "npm install picasso-q-plugin"
+* you will get a new subfolder 
 
 ### Resources:
 * To learn about PicassoJS see https://picassojs.com and https://github.com/qlik-oss/picasso.js
-* Although this code will run out of the box, always use the latest version of Picasso.js and Picasso-Q-Plugin using NPM INSTALL, check the inline-comments in the .js file!
-* A sample app is also provided in here (*.qvf) 
+* A sample app is also provided in here (*.qvf) which has sample data for the sample-stack-area chart and sample-range-area chart like in the screenshot above.
 
