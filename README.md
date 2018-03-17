@@ -18,8 +18,8 @@ This code will run out of the box and doesn't force you to install the latest pi
 
 * Go to the relative root folder on Qlik Sense Desktop in a Command Prompt. In the above example the extension is here: "C:\Users\<yourid>\Documents\Qlik\Sense\Extensions\mypicasso1"
 * type "npm install picassojs.com"
-* type "npm install picasso-q-plugin"
-* you will get a new subfolder 
+* type "npm install picasso-plugin-q"
+* you will get a new subfolder "node_modules" with more subfolders inside
 
 ### Resources:
 * To learn about PicassoJS see https://picassojs.com and https://github.com/qlik-oss/picasso.js
