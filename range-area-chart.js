@@ -1,9 +1,16 @@
 define([
-// Picasso and Picasso Q plugin which is preinstalled with Qlik Sense (no download needed)
+// Picasso and Picasso Q plugin from the preinstalled Qlik Sense location (usually way older 
+// than the current picassojs.com (this works out of the box, no NPM INSTALL needed, but
+// no guarantee that below asset locations will remain the same in later Sense versions. Use  
+// this only as a first quick try or if you cannot use NPM INSTALL as instructed next ...
+	
 	'/resources/assets/external/picasso/dist/picasso.min.js', 
 	'/resources/assets/external/picasso/plugins/q/dist/picasso-q.min.js' 
 	
-//	Picasso and Picasso Q plugin when you used NPM package manager from your extension root folder
+// Picasso and Picasso Q plugin after you used NPM package manager from within your extension  
+// root folder. If you did so, the below relative subfolders with *.min.js files inside
+// should have been created.
+	
 //	'./node_modules/picasso.js/dist/picasso.min', // to get this run "npm install picasso.js"
 //	'./node_modules/picasso-plugin-q/dist/picasso-q.min' // to get this run "npm install picasso-plugin-q"
 ]
