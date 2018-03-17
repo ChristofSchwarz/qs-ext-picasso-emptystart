@@ -1,4 +1,4 @@
-# qs-ext-picasso-emptystart
+# Cookbook to Picasso Qlik Sense Extensions
 Here you can find JS code to be used as a starting point for a Qlik Sense *Picasso extension*, an extension which makes use of the open-sourced rendering engine picassojs.com by Qlik.
 
 When you install this example and use it, it will show "Hello PicassoJS" as a static text only. That is, because it is meant to be replaced with some more exciting examples from picassojs.com or your own chart definition. 
