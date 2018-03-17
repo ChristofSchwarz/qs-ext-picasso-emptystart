@@ -11,7 +11,7 @@ When you install this example and use it, it will show "Hello PicassoJS" as a st
 5) When done, copy/paste your Json definitions (the settings-object and possible custom functions) into your mypicasso1.js file from this package where the inline-comments tell you. Adjust the hypercube size, number of measures and dimensions accordingly.
 
 Screenshots:
-![alt text](https://raw.githubusercontent.com/ChristofSchwarz/qs-ext-picasso-emptystart/master/Screenshot.png?3 "Screenshot")
+![alt text](https://raw.githubusercontent.com/ChristofSchwarz/qs-ext-picasso-emptystart/master/Screenshot.png?4 "Screenshot")
 
 ### Note on NPM INSTALL
 This code will run out of the box and doesn't force you to install the latest picassojs javascript packages. This is because it reuses the preinstalled picasso.min.js and picasso-q.min.js which ships with the Sense installtion (both Server and Desktop). However it is *strongly recommended* to download Picasso.js and Picasso-Q-Plugin using NPM INSTALL (part of NodeJS installation). This is because the internally shipped picasso files may relocate with newer versions and they are typically months older than the current available one.
