@@ -81,11 +81,11 @@ define([
 				}],
 				settings: {
 				
-// Use room between the comment rows ▼ ▼ ▼ and ▲ ▲ ▲ to copy/paste 
-// your Picasso settings. Make sure you copy only the settings part
-// without the opening and closing {} curly brackets.
-// Then search for the labels of the Test Data array used on
-// observablehq.com and replace it with the qHypercube syntax e.g.
+// I used the room between rows ▼ ▼ ▼ and ▲ ▲ ▲ to copy/paste 
+// the settings object from 
+// https://beta.observablehq.com/@miralemd/picasso-js-stacked-area-chart
+// Then I searched and replaced the labels of the Test Data array as
+// follows:
 // Month --> qDimensionInfo/0
 // Year --> qDimensionInfo/1
 // Sales --> qMeasureInfo/0
