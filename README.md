@@ -10,7 +10,7 @@ Although this example already contains a specific picasso chart (the Range-Area 
 
 This is contained in the sample:
 
-![alt text](https://raw.githubusercontent.com/ChristofSchwarz/qs-ext-picasso-emptystart/master/Screenshot%202018-03-16%2019.10.14.png "text")
+![alt text](https://raw.githubusercontent.com/ChristofSchwarz/qs-ext-picasso-emptystart/master/Screenshot.png "text")
 
 ### Resources:
 * To learn about PicassoJS see https://picassojs.com and https://github.com/qlik-oss/picasso.js
