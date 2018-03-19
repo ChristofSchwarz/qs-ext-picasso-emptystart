@@ -35,7 +35,7 @@ define([
 			items: {
 				dimensions: {
 					uses: "dimensions"
-					,min: 0,  // adjust this as needed
+					,min: 0  // adjust this as needed
 					//,max: 2
 				},
 				measures: {
