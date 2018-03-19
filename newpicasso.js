@@ -30,40 +30,60 @@ define([
 
 	return {
 		definition: { // property panel definition
-		  type: 'items',
-		  component: 'accordion',
-		  items: {
-			dimensions: {
-				uses: "dimensions",
-				min: 1,  // adjust this as needed
-				max: 2
+			type: 'items',
+			component: 'accordion',
+			items: {
+				dimensions: {
+					uses: "dimensions",
+					min: 1,  // adjust this as needed
+					max: 2
+				},
+				measures: {
+					uses: "measures",
+					min: 2,  // adjust this as needed
+					max: 2
+				},
+				sorting: {
+					uses: "sorting"
+				},	  
+				addons: {
+					uses: "addons"
+				},
+				appearance: {
+					uses: "settings",
+					items: {
+						section1: {
+							type: "string",
+							ref: "customprop1",
+							label: "Custom Settings",
+							expression: "optional",
+							defaultValue: "Hello PicassoJS"
+						}
+					}
+				},
+				about: {
+					component: "items",
+					label: "About",
+					type: "items",
+					items: {
+						authorText: {
+						label: "by Christof Schwarz",
+						component: "text"
+						}
+					}
+				}
 			},
-			measures: {
-				uses: "measures",
-				min: 2,  // adjust this as needed
-				max: 2
-			},
-			sorting: {
-				uses: "sorting"
-			},	  
-			data: {
-			  uses: 'data'
-			},
-			settings: {
-			  uses: 'settings'
-			},
-		  },
 		},
 		initialProperties: {
-		  qHyperCubeDef: { // basic hypercube setup
-			qDimensions: [],
-			qMeasures: [],
-			qInitialDataFetch: [
-			  { qWidth: 3, qHeight: 1000 },  // adjust as needed
-			],
-			qSuppressZero: false,
-			qSuppressMissing: true,
-		  }
+			qHyperCubeDef: { // basic hypercube setup
+				qDimensions: [],
+				qMeasures: [],
+				qInitialDataFetch: [
+				  { qWidth: 3, qHeight: 1000 },  // adjust as needed
+				],
+				qSuppressZero: false,
+				qSuppressMissing: true,
+			}
 		},
 		paint: function ($element, layout) {
 			if (!this.chart) { // instantiate picasso chart on first time render
@@ -91,7 +111,7 @@ define([
 // High --> qMeasureInfo/1
 
 // ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ 
-	components: [{ type: 'text', text: 'Hello PicassoJS' }]
+	components: [{ type: 'text', text: layout.customprop1}]
 // ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ 
 
 				}
