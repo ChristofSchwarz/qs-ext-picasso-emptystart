@@ -14,7 +14,7 @@ define([
 //	'./node_modules/picasso.js/dist/picasso.min', // to get this run "npm install picasso.js"
 //	'./node_modules/picasso-plugin-q/dist/picasso-q.min' // to get this run "npm install picasso-plugin-q"
 ]
-,function(picasso, picassoQ ) 
+,function(picasso, picassoQ) 
 {
   picasso.use(picassoQ); // register q plugin
  
@@ -46,12 +46,32 @@ define([
 			sorting: {
 				uses: "sorting"
 			},	  
-			data: {
-			  uses: 'data'
+			addons: {
+				uses: "addons"
 			},
-			settings: {
-			  uses: 'settings'
+			appearance: {
+				uses: "settings",
+				items: {
+					section1: {
+						type: "string",
+						ref: "customprop1",
+						label: "Custom Settings",
+						expression: "optional",
+						defaultValue: "Hello PicassoJS"
+					}
+				}
 			},
+			about: {
+				component: "items",
+				label: "About",
+				type: "items",
+				items: {
+					authorText: {
+					label: "by Christof Schwarz",
+					component: "text"
+					}
+				}
+			}
 		  },
 		},
 		initialProperties: {
