@@ -34,14 +34,14 @@ define([
 			component: 'accordion',
 			items: {
 				dimensions: {
-					uses: "dimensions",
-					min: 1,  // adjust this as needed
-					max: 2
+					uses: "dimensions"
+					,min: 0,  // adjust this as needed
+					//,max: 2
 				},
 				measures: {
-					uses: "measures",
-					min: 2,  // adjust this as needed
-					max: 2
+					uses: "measures"
+					,min: 0  // adjust this as needed
+					//,max: 2
 				},
 				sorting: {
 					uses: "sorting"
@@ -67,8 +67,8 @@ define([
 					type: "items",
 					items: {
 						authorText: {
-						label: "by Christof Schwarz",
-						component: "text"
+							label: "by Christof Schwarz",
+							component: "text"
 						}
 					}
 				}
