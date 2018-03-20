@@ -6,9 +6,11 @@ When you install this example and use it, it will show "Hello PicassoJS" as a st
 1) Download this extension package as a ZIP and extract it to your Qlik Sense Desktop extension folder or, if on a Sense Server, import it with the QMC
 2) Go to the address http://localhost:4848/dev-hub , right-click on the Extension "newpicasso", choose "Duplicate" and give it a new name e.g. "mypicasso1"
 * Note that there are also some examples copied and opened in the Extenions editor, like 'sample-stack-area.js' and 'sample-range-area.js' which you can copy/place over your "mypicasso1.js" file to get a working chart instantly.
+* here is my video Part 1 where I explain the steps so far https://youtu.be/KRADE-GXCf4
 3) To start your own chart, just remove the "Hello PicassoJS" line between the down triangles ▼▼▼ and up triangles ▲▲▲ where it reads "components: [...]
 4) Best place to try out the settings in a what you see it what you get manner is the "Examples" section on https://picassojs.com This will take you to  https://beta.observablehq.com (the playground page behind) 
 5) When done, copy/paste your Json definitions (the settings-object and possible custom functions) into your mypicasso1.js file from this package where the inline-comments tell you. Adjust the hypercube size, number of measures and dimensions accordingly.
+* here is my video Part 2, where I explain the process https://youtu.be/ZYjmO-oAFyM
 
 Screenshots:
 ![alt text](https://raw.githubusercontent.com/ChristofSchwarz/qs-ext-picasso-emptystart/master/Screenshot.png?4 "Screenshot")
