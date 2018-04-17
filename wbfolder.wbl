@@ -1,4 +1,6 @@
 newpicasso.qext;
 newpicasso.js;
 sample-stacked-area.js;
-sample-range-area.js
+sample-range-area.js;
+node_modules/picasso.js/dist/picasso.js;
+node_modules/picasso-plugin-q/dist/picasso-q.js
