@@ -1,8 +1,8 @@
 {
-	"name": "newpicasso",
-	"description": "Picasso visualization template",
+	"name": "New-PicassoJS-Viz",
+	"description": "Picasso visualization template to be completed",
 	"type": "visualization-template",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"icon": "extension",
 	"author": "Christof Schwarz",
 	"keywords": "qlik-sense, visualization, picasso",
