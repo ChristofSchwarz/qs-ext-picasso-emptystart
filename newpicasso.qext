@@ -1,7 +1,7 @@
 {
 	"name": "newpicasso",
 	"description": "Picasso visualization template",
-	"type": "visualization",
+	"type": "visualization-template",
 	"version": "1.0.1",
 	"icon": "extension",
 	"author": "Christof Schwarz",
